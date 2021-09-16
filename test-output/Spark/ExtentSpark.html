@@ -1,0 +1,1390 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<title>Extent</title>
+<link rel="apple-touch-icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link rel="shortcut icon" href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png">
+<link href="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@c952cc003431b643d7a73337421ff42b75bac784/spark/css/spark-style.css" rel="stylesheet" />
+<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+<script src="https://cdn.rawgit.com/extent-framework/extent-github-cdn/7cc78ce/spark/js/jsontree.js"></script>
+<style type="text/css"></style></head><body class="spa bdd-report standard">
+  <div class="app">
+    <div class="layout">
+<div class="header navbar">
+<div class="vheader">
+<div class="nav-logo">
+<a href="#">
+<div class="logo" style="background-image: url('https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@b00a2d0486596e73dd7326beacf352c639623a0e/commons/img/logo.png')"></div>
+</a>
+</div>
+<ul class="nav-left">
+<li class="search-box">
+<a class="search-toggle" href="#">
+<i class="search-icon fa fa-search"></i>
+<i class="search-icon-close fa fa-close"></i>
+</a>
+</li>
+<li class="search-input"><input id="search-tests" class="form-control" type="text" placeholder="Search..."></li>
+</ul>
+<ul class="nav-right">
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Extent Report</span></a>
+</li>
+<li class="m-r-10">
+<a href="#"><span class="badge badge-primary">Sep 16, 2021 06:28:28 pm</span></a>
+</li>
+</ul>
+</div>
+</div><div class="side-nav">
+<div class="side-nav-inner">
+<ul class="side-nav-menu">
+<li class="nav-item dropdown" onclick="toggleView('dashboard-view')">
+<a id="nav-dashboard" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bar-chart"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('test-view')">
+<a id="nav-test" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-list"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('category-view')">
+<a id="nav-category" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-tag"></i></span>
+</a>
+</li>
+<li class="nav-item dropdown" onclick="toggleView('exception-view')">
+<a id="nav-exception" class="dropdown-toggle" href="#">
+<span class="ico"><i class="fa fa-bug"></i></span>
+</a>
+</li>
+</ul>
+</div>
+</div>      <div class="vcontainer">
+        <div class="main-content">
+<div class="container-fluid p-4 view dashboard-view">
+<div class="row">
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Started</p>
+<h3>Sep 16, 2021 06:28:28 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0">Ended</p>
+<h3>Sep 16, 2021 06:28:53 pm</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-pass">Features Passed</p>
+<h3>0</h3>
+</div></div>
+</div>
+<div class="col-md-3">
+<div class="card"><div class="card-body">
+<p class="m-b-0 text-fail">Features Failed</p>
+<h3>4</h3>
+</div></div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Features</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='parent-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'>
+<b>0</b> features passed
+</small>
+</div>
+<div>
+<small data-tooltip='100%'><b>4</b> features failed,
+<b>0</b> skipped, <b data-tooltip='0%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Scenarios</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='child-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> scenarios passed</small></div>
+<div>
+<small data-tooltip='100%'><b>13</b> scenarios failed,
+<b>0</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+<div class="col-md-4">
+<div class="card">
+<div class="card-header">
+<h6 class="card-title">Steps</h6>
+</div>
+<div class="card-body">
+<div class="">
+<canvas id='grandchild-analysis' width='115' height='90'></canvas>
+</div>
+</div>
+<div class="card-footer">
+<div><small data-tooltip='0%'><b>0</b> steps passed</small></div>
+<div>
+<small data-tooltip='29%'><b>13</b> steps failed,
+<b>31</b> skipped, <b data-tooltip='%'>0</b> others
+</small>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="row"><div class="col-md-12">
+<div class="card"><div class="card-header"><p>Timeline</p></div>
+<div class="card-body pt-0"><div>
+<canvas id="timeline" height="120"></canvas>
+</div></div>
+</div>
+</div></div>
+<script>
+var timeline = {
+"Menu Related Test Cases":22.588,"Customer Care Related Test Cases":14.879,"Login Related Test cases":15.409,"Search Relate Test Cases":10.673
+};
+</script>
+<div class="row">
+<div class="col-lg-6 col-md-12 category-container">
+<div class="card">
+<div class="card-header"><p>Tags</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Passed</th><th>Failed</th><th>Skipped</th><th>Others</th><th>Passed %</th></tr></thead><tbody>
+<tr>
+<td>@ValidateErrorMessage</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SideMenuLinks</td>
+<td>0</td>
+<td>6</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@MobileNumberValidate</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@CustomerCare</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SignUP</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SearchSuggestion</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@SearchBar</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+<tr>
+<td>@ErrorMsgForBlankName</td>
+<td>0</td>
+<td>1</td>
+<td>0</td>
+<td>0</td>
+<td>0%</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+<div class="col-lg-6 col-md-12 sysenv-container">
+<div class="card">
+<div class="card-header"><p>System/Environment</p></div>
+<div class="card-body pb-0 pt-0"><table class="table table-sm table-bordered">
+<thead><tr class="bg-gray"><th>Name</th><th>Value</th></tr></thead>
+<tbody>
+<tr>
+<td>version</td>
+<td>8.1</td>
+</tr>
+<tr>
+<td>os</td>
+<td>Windows</td>
+</tr>
+</tbody>
+</table></div>
+</div>
+</div>
+</div>
+</div>
+<script>
+var statusGroup = {
+parentCount: 5,
+passParent: 0,
+failParent: 4,
+warningParent: 0,
+skipParent: 0,
+childCount: 5,
+passChild: 0,
+failChild: 13,
+warningChild: 0,
+skipChild: 0,
+infoChild: 0,
+grandChildCount: 5,
+passGrandChild: 0,
+failGrandChild: 13,
+warningGrandChild: 0,
+skipGrandChild: 31,
+infoGrandChild: 0,
+eventsCount: 5,
+};
+</script><div class="test-wrapper row view test-view">
+  <div class="test-list">
+    <div class="test-list-tools">
+<ul class="tools pull-left">
+<li><a href="#"><span class="font-size-14">Tests</span></a></li>
+</ul>
+<ul class="tools text-right">
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-exclamation-circle"></i></a>
+<ul id="status-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" status="fail" href="#"><span>Fail</span><span class="status danger"></span></a>
+<div class="dropdown-divider"></div>
+<a status="clear" class="dropdown-item" href="#"><span>Clear</span><span class="pull-right"><i class="fa fa-close"></i></span></a>
+</ul>
+</li>
+<li class="dropdown">
+<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-tag"></i></a>
+<ul id="tag-toggle" class="dropdown-menu dropdown-md p-v-0">
+<a class="dropdown-item" href="#">@ValidateErrorMessage</a><a class="dropdown-item" href="#">@SideMenuLinks</a><a class="dropdown-item" href="#">@MobileNumberValidate</a><a class="dropdown-item" href="#">@CustomerCare</a><a class="dropdown-item" href="#">@SignUP</a><a class="dropdown-item" href="#">@SearchSuggestion</a><a class="dropdown-item" href="#">@SearchBar</a><a class="dropdown-item" href="#">@ErrorMsgForBlankName</a>
+</ul>
+</li>
+</ul>
+</div>    <div class="test-list-wrapper scrollable">
+      <ul class="test-list-item">
+        <li class="test-item"  status="fail" test-id="1"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Menu Related Test Cases</p>
+            <p class="text-sm">
+              <span>18:28:30 pm</span> / <span>00:00:22:588</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Menu Related Test Cases</h5>
+<span class='badge badge-success'>09.16.2021 18:28:30</span>
+<span class='badge badge-danger'>09.16.2021 18:28:53</span>
+<span class='badge badge-default'>00:00:22:588</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=1</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="2"><span class="badge log fail-bg mr-2">Fail</span>7. User is able to navigate to left side menu links to navigate to various categories</div>
+      </div>
+    </div>
+        <div class="scenario_outline ">
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="3"><span class="badge log fail-bg mr-2">Fail</span>7. User is able to navigate to left side menu links to navigate to various categories</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Menu.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User clicks on "Bus"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User is navigates to the corresponding link related to "Bus"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="6"><span class="badge log fail-bg mr-2">Fail</span>7. User is able to navigate to left side menu links to navigate to various categories</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Menu.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User clicks on "Baby Care"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User is navigates to the corresponding link related to "Baby Care"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="16"><span class="badge log fail-bg mr-2">Fail</span>7. User is able to navigate to left side menu links to navigate to various categories</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Menu.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User clicks on "Medical"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User is navigates to the corresponding link related to "Medical"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="18"><span class="badge log fail-bg mr-2">Fail</span>7. User is able to navigate to left side menu links to navigate to various categories</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Menu.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User clicks on "Travel"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User is navigates to the corresponding link related to "Travel"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="20"><span class="badge log fail-bg mr-2">Fail</span>7. User is able to navigate to left side menu links to navigate to various categories</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Menu.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User clicks on "Real Estate"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User is navigates to the corresponding link related to "Real Estate"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+            <div class="card-body l1">
+              <div class="card-header">
+                <div class="card-title outline-child">
+                  <div class="node" id="48"><span class="badge log fail-bg mr-2">Fail</span>7. User is able to navigate to left side menu links to navigate to various categories</div>
+                </div>
+              </div>
+              <div class="card-body mt-3 ">
+                  <div class="step fail-bg">
+                    <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Menu.feature:5)
+</textarea>
+      
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>When User clicks on "Wedding"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+                  <div class="step skip-bg">
+                    <span>Then User is navigates to the corresponding link related to "Wedding"</span>
+      <div>Step skipped
+      </div>
+                  </div>
+              </div>
+            </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="4"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Customer Care Related Test Cases</p>
+            <p class="text-sm">
+              <span>18:28:30 pm</span> / <span>00:00:14:879</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Customer Care Related Test Cases</h5>
+<span class='badge badge-success'>09.16.2021 18:28:30</span>
+<span class='badge badge-danger'>09.16.2021 18:28:45</span>
+<span class='badge badge-default'>00:00:14:879</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=4</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="5"><span class="badge log fail-bg mr-2">Fail</span>8. User is able to see the drop down in customer care service tab</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefs.StepDef.user_navigates_to_the_application_url(java.lang.String)">
+                <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/CustomerCare.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_navigates_to_customer_care_page_by_clicking_on_customer_care_tab_at_the_right_mid_of_the_page()">
+                <span>And User navigates to Customer care page by clicking on Customer Care tab at the right-mid of the page</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_enter_in_the_text_box(java.lang.String)">
+                <span>When User enter "online" in the Text box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_is_able_to_see_the_drop_down_and_all_the_items_in_the_list_must_have_text_as(java.lang.String)">
+                <span>Then User is able to see the drop down and all the items in the list must have text as "online"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="7"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Login Related Test cases</p>
+            <p class="text-sm">
+              <span>18:28:30 pm</span> / <span>00:00:15:409</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Login Related Test cases</h5>
+<span class='badge badge-success'>09.16.2021 18:28:30</span>
+<span class='badge badge-danger'>09.16.2021 18:28:46</span>
+<span class='badge badge-default'>00:00:15:409</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=7</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="8"><span class="badge log fail-bg mr-2">Fail</span>4. User is able to enter only 10 digits in the Mobile Text box</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefs.StepDef.user_navigates_to_the_application_url(java.lang.String)">
+                <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Login.feature:28)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_clicks_on_login_in_link_at_the_top_right_corner_of_the_application()">
+                <span>When User clicks on Login-in link at the top right corner of the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_is_able_to_enter_only_digits_in_the_mobile_text_field(java.lang.String)">
+                <span>Then User is able to enter only "10" digits in the Mobile text field</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="9"><span class="badge log fail-bg mr-2">Fail</span>3. User receives an error message when tries to enter incorrect name in the Login pop up</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefs.StepDef.user_navigates_to_the_application_url(java.lang.String)">
+                <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Login.feature:20)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_clicks_on_login_in_link_at_the_top_right_corner_of_the_application()">
+                <span>When User clicks on Login-in link at the top right corner of the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_do_not_enter_any_name_and_phone_number_but_clicks_on_submit_button()">
+                <span>And User do not enter any name and phone number but clicks on Submit Button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_gets_error_message_as(java.lang.String)">
+                <span>Then User gets error message as "Please enter a valid name !!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="14"><span class="badge log fail-bg mr-2">Fail</span>1. User is able to Sign up in the application</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefs.StepDef.user_navigates_to_the_application_url(java.lang.String)">
+                <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Login.feature:4)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_clicks_on_sign_up_link_at_the_top_right_corner_of_the_application()">
+                <span>When User clicks on Sign up link at the top right corner of the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_enters_name_as_and_phone_number_as_and_clicks_on_submit_button(java.lang.String,java.lang.String)">
+                <span>And User enters name as "Chetana" and Phone number as "7066089027" and clicks on Submit Button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_is_displayed_with_the_message_as(java.lang.String)">
+                <span>Then User is displayed with the message as "OTP is sent on number"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="23"><span class="badge log fail-bg mr-2">Fail</span>2. User receives an error message when tries to enter incorrect mobile number in the Login pop up</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefs.StepDef.user_navigates_to_the_application_url(java.lang.String)">
+                <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Login.feature:12)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_clicks_on_login_in_link_at_the_top_right_corner_of_the_application()">
+                <span>When User clicks on Login-in link at the top right corner of the application</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" >
+                <span>And User enters name as "Chetana" and Phone number as "1234567890" and clicks on Send OTP Button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_gets_error_message_as(java.lang.String)">
+                <span>Then User gets error message as "Please Enter valid Mobile number!"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+        <li class="test-item"  status="fail" test-id="50"
+          author=""
+          tag=""
+          device="">
+          <div class="test-detail">
+            <p class="name">Search Relate Test Cases</p>
+            <p class="text-sm">
+              <span>18:28:42 pm</span> / <span>00:00:10:673</span>
+              <span class="badge fail-bg log float-right">Fail</span>
+            </p>
+          </div>
+          <div class="test-contents d-none">
+<div class="detail-head">
+<div class="p-v-10">
+<div class="info">
+<h5 class="test-status text-fail">Search Relate Test Cases</h5>
+<span class='badge badge-success'>09.16.2021 18:28:42</span>
+<span class='badge badge-danger'>09.16.2021 18:28:53</span>
+<span class='badge badge-default'>00:00:10:673</span>
+&middot; <span class='uri-anchor badge badge-default'>#test-id=50</span>
+</div>
+<div class="m-t-10 m-l-5"></div>
+</div>
+</div>
+<div class="accordion mt-4">
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="51"><span class="badge log fail-bg mr-2">Fail</span>5. User is able to search the Application</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefs.StepDef.user_navigates_to_the_application_url(java.lang.String)">
+                <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Search.feature:5)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_enters_in_search_text_box(java.lang.String)">
+                <span>When User enters "restaurants" in search text box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_clicks_search_button()">
+                <span>And User clicks search button</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_is_able_to_see_search_result_related_to_restaurants()">
+                <span>Then User is able to see search result related to restaurants</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+  <div class="card">
+    <div class="card-header" role="tab">
+      <div class="card-title">
+        <div class="node" id="84"><span class="badge log fail-bg mr-2">Fail</span>6. User is able to see the drop down when he keys in the text in the search box</div>
+      </div>
+    </div>
+        <div class="">
+          <div class="card-body">
+              <div class="step fail-bg" title="StepDefs.StepDef.user_navigates_to_the_application_url(java.lang.String)">
+                <span>Given User navigates to the application url "https://www.justdial.com/"</span>
+      <div>
+        <textarea disabled class="code-block">java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebDriver.get(String)" because the return value of "Utils.TestContext.getDriver()" is null
+	at StepDefs.StepDef.user_navigates_to_the_application_url(StepDef.java:30)
+	at ✽.User navigates to the application url "https://www.justdial.com/"(classpath:Features/Search.feature:13)
+</textarea>
+      
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_enters_in_search_text_box(java.lang.String)">
+                <span>When User enters "resta" in search text box</span>
+      <div>Step skipped
+      </div>
+              </div>
+              <div class="step skip-bg" title="StepDefs.StepDef.user_is_able_to_see_the_drop_down_under_search_text_box_with_all_the_items_with_text(java.lang.String)">
+                <span>Then User is able to see the drop down under search text box with all the items with text "resta"</span>
+      <div>Step skipped
+      </div>
+              </div>
+          </div>
+        </div>
+  </div>
+</div>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+<div class="test-content scrollable">
+<div class="test-content-tools">
+<ul><li><a class="back-to-test" href="#"><i class="fa fa-arrow-left"></i></a></li></ul>
+</div>
+<div class="test-content-detail"><div class="detail-body"></div></div>
+</div></div>
+<div class="test-wrapper row view category-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Category</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">8</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@ValidateErrorMessage</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ValidateErrorMessage</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='23'>2. User receives an error message when tries to enter incorrect mobile number in the Login pop up</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.2. User receives an error message when tries to enter incorrect mobile number in the Login pop up</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>6</span>
+</span>
+<p class="name">@SideMenuLinks</p>
+<p class="duration text-sm">6 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SideMenuLinks</h4>
+<span status="fail" class='badge log badge-danger'>6 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='3'>7. User is able to navigate to left side menu links to navigate to various categories</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='6'>7. User is able to navigate to left side menu links to navigate to various categories</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='16'>7. User is able to navigate to left side menu links to navigate to various categories</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='18'>7. User is able to navigate to left side menu links to navigate to various categories</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='20'>7. User is able to navigate to left side menu links to navigate to various categories</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='48'>7. User is able to navigate to left side menu links to navigate to various categories</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@MobileNumberValidate</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@MobileNumberValidate</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='8'>4. User is able to enter only 10 digits in the Mobile Text box</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.4. User is able to enter only 10 digits in the Mobile Text box</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@CustomerCare</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@CustomerCare</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='5'>8. User is able to see the drop down in customer care service tab</a>
+<div class="">
+<span class="badge badge-default">Customer Care Related Test Cases.8. User is able to see the drop down in customer care service tab</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@SignUP</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SignUP</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='14'>1. User is able to Sign up in the application</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.1. User is able to Sign up in the application</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@SearchSuggestion</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SearchSuggestion</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='84'>6. User is able to see the drop down when he keys in the text in the search box</a>
+<div class="">
+<span class="badge badge-default">Search Relate Test Cases.6. User is able to see the drop down when he keys in the text in the search box</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@SearchBar</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@SearchBar</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:42 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='51'>5. User is able to search the Application</a>
+<div class="">
+<span class="badge badge-default">Search Relate Test Cases.5. User is able to search the Application</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">@ErrorMsgForBlankName</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>@ErrorMsgForBlankName</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:30 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='9'>3. User receives an error message when tries to enter incorrect name in the Login pop up</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.3. User receives an error message when tries to enter incorrect name in the Login pop up</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div><div class="test-wrapper row view exception-view attributes-view">
+<div class="test-list">
+<div class="test-list-tools">
+<ul class="tools pull-left"><li><a href=""><span class="font-size-14">Exception</span></a></li></ul>
+<ul class="tools text-right"><li><a href="#"><span class="badge badge-primary">1</span></a></li></ul>
+</div>
+<div class="test-list-wrapper scrollable">
+<ul class="test-list-item">
+<li class="test-item">
+<div class="test-detail">
+<span class="meta">
+<span class='badge log badge-danger'>1</span>
+</span>
+<p class="name">java.lang.NullPointerException</p>
+<p class="duration text-sm">1 tests</p>
+</div>
+<div class="test-contents d-none">
+<div class="info">
+<h4>java.lang.NullPointerException</h4>
+<span status="fail" class='badge log badge-danger'>1 failed</span>
+</div>
+<table class='table table-sm mt-4'>
+<thead>
+<tr>
+<th class="status-col">Status</th>
+<th class="timestamp-col">Timestamp</th>
+<th>TestName</th>
+</tr>
+</thead>
+<tbody>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='28'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:41 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='27'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.2. User receives an error message when tries to enter incorrect mobile number in the Login pop up.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='4' id='61'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Customer Care Related Test Cases.8. User is able to see the drop down in customer care service tab.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:45 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='60'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.1. User is able to Sign up in the application.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='87'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='96'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.4. User is able to enter only 10 digits in the Mobile Text box.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='7' id='105'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Login Related Test cases.3. User receives an error message when tries to enter incorrect name in the Login pop up.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='106'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:46 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='126'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:47 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='135'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:52 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='147'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Search Relate Test Cases.5. User is able to search the Application.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='50' id='159'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Search Relate Test Cases.6. User is able to see the drop down when he keys in the text in the search box.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+<tr class="tag-test-status" status="fail">
+<td><span class="badge log fail-bg">Fail</span></td>
+<td>18:28:53 pm</td>
+<td>
+<a href="#" class="linked" test-id='1' id='168'>Given User navigates to the application url "https://www.justdial.com/"</a>
+<div class="">
+<span class="badge badge-default">Menu Related Test Cases.7. User is able to navigate to left side menu links to navigate to various categories.Given User navigates to the application url "https://www.justdial.com/"</span>
+</div>
+</td>
+</tr>
+</tbody>
+</table>
+</div>
+</li>
+</ul>
+</div>
+</div>
+<div class="test-content scrollable">
+<div class="test-content-detail">
+<div class="detail-body"></div>
+</div>
+</div>
+</div>        </div>
+      </div>
+    </div>
+  </div>
+<script src="https://cdn.jsdelivr.net/gh/extent-framework/extent-github-cdn@14e9bb345ef7e2ed3a102f271d84e9f0267c88e7/spark/js/spark-script.js"></script>
+<script type="text/javascript"></script></body>
+</html>
