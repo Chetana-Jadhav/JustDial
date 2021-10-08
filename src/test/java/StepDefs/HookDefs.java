@@ -26,9 +26,9 @@ public class HookDefs extends BaseTest {
         public void SetUp(Scenario scenario) {
             DesiredCapabilities cap = new DesiredCapabilities();
             cap.setAcceptInsecureCerts(true);
-            String browserName = System.getProperty("browser");
-            testContext.setDriver(DriverFactory.createInstance(browserName));
-           // testContext.setDriver(new ChromeDriver(cap));
+           // String browserName = System.getProperty("browser");
+            //testContext.setDriver(DriverFactory.createInstance(browserName));
+            testContext.setDriver(new ChromeDriver(cap));
             testContext.getDriver().manage().window().maximize();
             testContext.getDriver().manage().deleteAllCookies();
             testContext.getDriver().manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);

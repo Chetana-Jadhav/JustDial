@@ -27,7 +27,7 @@ public class StepDef extends BaseTest {
 
     @Given("User navigates to the application url {string}")
     public void user_navigates_to_the_application_url(String url) {
-        testContext.getDriver().get(url);
+            testContext.getDriver().get(url);
     }
 
     @When("User clicks on Sign up link at the top right corner of the application")
